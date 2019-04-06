@@ -1,5 +1,6 @@
 package com.example.anokhikastia.myfirstapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,5 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Display the new value in the text view.
         showCountTextView.setText(count.toString());
+    }
+
+    public void randomMe (View view) {
+        Intent randomIntent = new Intent(this, SecondActivity.class);
+        startActivity(randomIntent);
     }
 }
